@@ -14,7 +14,8 @@ const learning = {
   category: "Front End Development",
   topicImportance: "high",
   hoursThisWeek: 2,
-  weeklyHourGoal: 7
+  weeklyHourGoal: 7,
+  achievedStudyGoal: false
 };
 
 topicElement.innerText = `✔️ I'm learning ${learning.topic}.`;
