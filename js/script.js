@@ -15,7 +15,13 @@ const learning = {
   topicImportance: "high",
   hoursThisWeek: 2,
   weeklyHourGoal: 7,
-  achievedStudyGoal: false
+  achievedStudyGoal: false,
+  addStudyTime: function(hours) {
+    this.hoursThisWeek += hours;
+    if (this.hoursThisWeek >= this.weeklyHourGoal) {
+      this.achievedStudyGoal = true
+    }
+  }
 };
 
 topicElement.innerText = `✔️ I'm learning ${learning.topic}.`;
