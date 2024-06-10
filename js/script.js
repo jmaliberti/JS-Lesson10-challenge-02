@@ -19,7 +19,8 @@ const learning = {
   addStudyTime: function(hours) {
     this.hoursThisWeek += hours;
     if (this.hoursThisWeek >= this.weeklyHourGoal) {
-      this.achievedStudyGoal = true
+      this.achievedStudyGoal = true;
+      this.celebrate();
     }
   },
   celebrate: function () {
@@ -34,3 +35,4 @@ countElement.innerText = `✔️ I have ${learning.learningGoals.length} learnin
 
 topicElement.classList.remove("hide");
 countElement.classList.remove("hide");
+
