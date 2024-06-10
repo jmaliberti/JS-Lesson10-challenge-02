@@ -36,3 +36,4 @@ countElement.innerText = `✔️ I have ${learning.learningGoals.length} learnin
 topicElement.classList.remove("hide");
 countElement.classList.remove("hide");
 
+learning.addStudyTime(8);
